@@ -1,7 +1,9 @@
-# TEMPLATE
-> Project Legend
+# HELLO-MXX-WORLD
+> C++23 Hello Standard Modules Exemplar
 
-Project Overview
+Simple hello world application using C++ modules with import std configured with CMake
+
+- works on Arch Linux with latest g++ compiler and cmake ninja build packages
 
 ## [CONTRIBUTING](./CONTRIBUTING.md)
 > Project Contribution Rules

@@ -8,6 +8,6 @@
 GNU Affero General Public License v3.0 or later
 NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>
 SPDX-License-Identifier: AGPL-3.0-or-later
-app: [`NAME`] [LEGEND]
+app: `hello-mxx-world` C++23 Hello Standard Modules Exemplar
 Ⓒ Copyright (C) [YEAR] Oleg'Ease'Kharchuk ᦒ
 ```
