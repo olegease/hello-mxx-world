@@ -3,6 +3,7 @@ set( CMAKE_CXX_STANDARD_REQUIRED ON )
 set( CMAKE_CXX_EXTENSIONS OFF )
 set( CMAKE_CXX_MODULE_STD ON )
 # library
+set( lib hello.world )
 set( APP_FACE_EXT ".ixx" )
 set( APP_IMPL_EXT ".mxx" )
 
@@ -12,14 +13,14 @@ file( GLOB_RECURSE APP_IMPL CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/*${AP
 set_source_files_properties( ${APP_FACE} PROPERTIES LANGUAGE CXX )
 set_source_files_properties( ${APP_IMPL} PROPERTIES LANGUAGE CXX )
 
-add_library( hello.world )
-target_sources( hello.world
+add_library( ${lib} )
+target_sources( ${lib}
    PUBLIC FILE_SET CXX_MODULES FILES ${APP_FACE}
    PRIVATE ${APP_IMPL}
 )
 # application
 add_executable( ${app} main.cxx )
-target_link_libraries( ${app} PRIVATE hello.world )
+target_link_libraries( ${app} PRIVATE ${lib} )
 
 # GNU Affero General Public License v3.0 or later
 # NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>
