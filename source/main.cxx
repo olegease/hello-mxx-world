@@ -2,7 +2,7 @@ import hello.world;
 import std;
 
 auto main( int argc, char *argv[] ) -> int try {
-   std::println( "{}", hello::world( ) );
+   std::println( "{}\n{}", argv[0], hello::world( ) );
 } catch ( ... ) {
    std::cerr << "... exception";
 }

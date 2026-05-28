@@ -1,7 +1,9 @@
 module hello.world;
 
-auto hello::world( ) noexcept -> char const *
-{ return "Hello, Standard Modules World!"; }
+using namespace std::string_view_literals;
+
+auto hello::world( ) noexcept -> std::string_view
+{ return "Hello, Standard Modules World!"sv; }
 
 // GNU Affero General Public License v3.0 or later
 // NO WARRANTY OF ANY KIND more details at <https://www.gnu.org/licenses/>

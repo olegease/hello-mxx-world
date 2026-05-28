@@ -1,7 +1,9 @@
 export module hello.world;
 
+import std;
+
 export namespace hello {
-   auto world( ) noexcept -> char const *;
+   auto world( ) noexcept -> std::string_view;
 }
 
 // GNU Affero General Public License v3.0 or later
